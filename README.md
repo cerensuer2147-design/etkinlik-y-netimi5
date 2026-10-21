@@ -1,4 +1,4 @@
-# Reacthttps://hafta4-lwk92b5f6-ceren8.vercel.app/ + TypeScript + Vite
+https://hafta4-lwk92b5f6-ceren8.vercel.app/
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
