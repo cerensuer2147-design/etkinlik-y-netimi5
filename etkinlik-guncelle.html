@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Etkinlik Güncelle</title>
+  <link rel="stylesheet" href="css/2416501041.css">
+  <script type="module" src="js/event-form.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Etkinlik Güncelle</h1>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="etkinlikler.html">Etkinlikler</a>
+      <a href="etkinlik-ekle.html">Ekle</a>
+    </nav>
+  </header>
+
+  <main style="padding: 1rem; max-width: 600px;">
+    <p>Alanlar mevcut etkinliğin bilgileriyle dolu gelir. Bu sprintte form veri güncellemez.</p>
+    
+    <form id="etkinlik-formu" data-mode="guncelle" novalidate style="display: flex; flexDirection: column; gap: 1rem;">
+      <div>
+        <label for="ad">Etkinlik Adı *</label><br>
+        <input type="text" id="ad" name="ad" style="width: 100%; padding: 0.5rem;">
+        <div id="ad-hata" class="hata-mesaji"></div>
+      </div>
+
+      <div>
+        <label for="kategori">Kategori *</label><br>
+        <select id="kategori" name="kategori" style="width: 100%; padding: 0.5rem;">
+          <option value="">Seçiniz</option>
+          <option value="Seminer">Seminer</option>
+          <option value="Atölye">Atölye</option>
+          <option value="Söyleşi">Söyleşi</option>
+        </select>
+        <div id="kategori-hata" class="hata-mesaji"></div>
+      </div>
+
+      <div>
+        <label for="tarih">Tarih * (GG-AA-YYYY)</label><br>
+        <input type="text" id="tarih" name="tarih" style="width: 100%; padding: 0.5rem;">
+        <div id="tarih-hata" class="hata-mesaji"></div>
+      </div>
+
+      <div>
+        <label for="saat">Saat *</label><br>
+        <input type="text" id="saat" name="saat" style="width: 100%; padding: 0.5rem;">
+        <div id="saat-hata" class="hata-mesaji"></div>
+      </div>
+
+      <div>
+        <label for="yer">Yer *</label><br>
+        <input type="text" id="yer" name="yer" style="width: 100%; padding: 0.5rem;">
+        <div id="yer-hata" class="hata-mesaji"></div>
+      </div>
+
+      <div>
+        <label for="kontenjan">Kontenjan</label><br>
+        <input type="number" id="kontenjan" name="kontenjan" style="width: 100%; padding: 0.5rem;">
+        <div id="kontenjan-hata" class="hata-mesaji"></div>
+      </div>
+
+      <div>
+        <label for="aciklama">Açıklama</label><br>
+        <textarea id="aciklama" name="aciklama" rows="4" style="width: 100%; padding: 0.5rem;"></textarea>
+      </div>
+
+      <button type="submit" style="background: #007bff; color: white; padding: 0.75rem; border: none; border-radius: 4px; cursor: pointer;">Güncelle</button>
+    </form>
+
+    <div id="form-mesaj"></div>
+  </main>
+
+  <footer>
+    Ceren Nur Süer - 2416501041 - 2026
+  </footer>
+</body>
+</html>

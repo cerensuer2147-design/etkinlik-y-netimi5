@@ -1,0 +1,190 @@
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --bg-color: #f1f5f9;
+  --card-bg: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --radius: 12px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+}
+
+/* Üst Üst Alan: Sol tarafta Başlık, Sağ tarafta Menü Butonları */
+header.site-baslik {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.baslik-sol {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.baslik-sol h1 {
+  margin: 0;
+  color: var(--primary);
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.baslik-sol .ikon {
+  font-size: 1.8rem;
+}
+
+nav.menu {
+  display: flex;
+  gap: 0.5rem;
+}
+
+nav.menu button {
+  background: #e2e8f0;
+  color: #334155;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+nav.menu button[aria-current="page"] {
+  background: var(--primary);
+  color: white;
+}
+
+/* Ana İçerik */
+main {
+  max-width: 900px;
+  margin: 1.5rem auto;
+  padding: 0 1.5rem;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  color: #1e293b;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+/* Kart Yapısı */
+.liste {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.kart {
+  background: #f8fafc;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.rozet {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.kart h2 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.35rem;
+  color: #0f172a;
+}
+
+.kart p {
+  margin: 0.4rem 0;
+  font-size: 0.925rem;
+  color: #475569;
+}
+
+.kart p strong {
+  color: #334155;
+}
+
+.kart-aciklama {
+  margin-top: 0.75rem !important;
+  color: #64748b !important;
+}
+
+.kart button, .detay button, .form button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.kart button:hover, .detay button:hover, .form button:hover {
+  background: var(--primary-hover);
+}
+
+/* Filtre Alanı */
+.filtreler {
+  display: flex;
+  gap: 1rem;
+  background: white;
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  margin-bottom: 1.5rem;
+}
+
+.filtreler div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.filtreler label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.filtreler input, .filtreler select {
+  padding: 0.6rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Detay & Form */
+.detay, .form {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
